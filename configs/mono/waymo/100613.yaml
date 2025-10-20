@@ -1,0 +1,27 @@
+inherit_from: "configs/mono/waymo/base_config.yaml"
+
+Dataset:
+  dataset_path: "datasets/waymo/100613/FRONT"
+  Calibration:
+    fx: 2044.5083584358413 
+    fy: 2044.5083584358413 
+    cx: 949.5746451352071 
+    cy: 633.2422462156501
+    k1: 0.040358363932006036 
+    k2: -0.33001662226602974 
+    p1: 0.0010402702690110032 
+    p2: -0.0015669020781401406 
+    k3: 0.0
+    width: 1920
+    height: 1280
+    depth_scale: 200.0
+    distorted: True
+
+opt_params:
+    position_lr_init: 0.0016
+    position_lr_final: 0.00016
+    init_lr: 2
+
+Training:
+    alpha: 0.98
+    mapping_itr_nosingle: 50

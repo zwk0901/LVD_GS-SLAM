@@ -1,0 +1,29 @@
+inherit_from: "configs/mono/dl3dv/base_config.yaml"
+
+Dataset:
+  dataset_path: "datasets/dl3dv/2/"
+  begin: 0
+  end: 300
+  Calibration:
+    fx: 204.04736
+    fy: 204.08832
+    cx: 128
+    cy: 128
+    k1: 0.0
+    k2: 0.0
+    p1: 0.0
+    p2: 0.0
+    k3: 0.0
+    width: 256
+    height: 256
+    depth_scale: 200.0
+    distorted: False
+
+opt_params:
+    position_lr_init: 0.0016
+    position_lr_final: 0.0000016
+    init_lr: 6
+
+Training:
+    #alpha: 0.98
+    mapping_itr_nosingle: 10
