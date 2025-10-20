@@ -34,7 +34,7 @@ conda activate lvd-gs
 LVD-GS 测试环境示例：
 - Ubuntu 20.04
 - PyTorch 2.1.0 / torchvision 0.16.0 / torchaudio 2.1.0（CUDA 11.8）
-- GPU: NVIDIA RTX A6000（或等效 CUDA 能力的 GPU）
+- GPU: NVIDIA RTX 3090ti
 
 3. Compile submodules for Gaussian splatting
 
@@ -71,11 +71,11 @@ Please note that you must agree to the MASt3R license when using it.
 
 ## Downloading Datasets
 
-#### Waymo
+#### NuScenes
 
-The processed data for the nine Waymo segments can be downloaded via [baidu](https://pan.baidu.com/s/1I1rnB6B8k2d4wzcRMT6gjA?pwd=omcg ) or [google](https://drive.google.com/drive/folders/1xUyNuNzUtsvZIV_q5Qz9zIXMGoMbLuCr?usp=sharing).
+The processed data for the NuScenes segments can be downloaded via [baidu](https://pan.baidu.com/s/1I1rnB6B8k2d4wzcRMT6gjA?pwd=omcg ) or [google](https://drive.google.com/drive/folders/1xUyNuNzUtsvZIV_q5Qz9zIXMGoMbLuCr?usp=sharing).
 
-Save data under the `datasets/waymo` directory.
+Save data under the `datasets/nuscenes` directory.
 
 #### KITTI
 
@@ -85,23 +85,22 @@ Save data under the `datasets/KITTI` directory.
 
 The full KITTI dataset can be downloaded from [The KITTI Vision Benchmark Suite](https://www.cvlibs.net/datasets/kitti/eval_odometry.php). The specific sequences used in this work are listed in KITTI_sequence_list.txt.
 
-#### DL3DV
+#### Self-collected Dataset
 
-The processed data for the three DL3DV scenes can be downloaded via [baidu](https://pan.baidu.com/s/1LWuCnzojV5M-nl0Xf3hKvg?pwd=gjh5) or [google](https://drive.google.com/drive/folders/11K6lnSkFFiiCuJ9KG7II2bt0O7nevl7K?usp=sharing).
-
-Save data under the `datasets/dl3dv` directory.
+The processed data for the three Self-collected Dataset scenes can be downloaded via
+Save data under the `datasets/Self-collected` directory.
 
 ## Run
 
 ```bash
-## Waymo-405841
+## NuScenes
 CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/waymo/405841.yaml"
 
-## KITTI-07
-CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/KITTI/07.yaml"
+## KITTI-01
+CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/KITTI/01.yaml"
 
-## DL3DV-2
-CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/dl3dv/2.yaml"
+##  Self-collected
+CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/Self-collected/2.yaml"
 ```
 
 ## Demo
@@ -126,15 +125,6 @@ CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/dl3dv/2.yaml"
 
 If you found our code/work to be useful in your own research, please considering citing the following:
 
-```bibtex
-@article{wenkaizhu2024lvdgs,
-  title={LVD-GS: Gaussian Splatting SLAM for Dynamic Scenes via Hierarchical Explicit-Implicit Representation},
-  author={Wenkaizhu and Xu Li and Benwu Wang},
-  journal={arXiv preprint arXiv:2401.12345},
-  year={2024}
-}
-```
-// ...existing code...
 # LVD_GS-SLAM
 # motivation
 <img width="1863" height="1060" alt="intro" src="https://github.com/user-attachments/assets/525038d8-2a93-4f12-968f-83499bf5c248" />
