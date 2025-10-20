@@ -2,7 +2,7 @@
 <p align="center">
   <h1 align="center">LVD-GS: LiDAR-Visual 3D Gaussian Splatting SLAM for Dynamic Scenes</h1>
   <p align="center">
-    <a href="https://github.com/zwk0901/LVD_GS-SLAM"><strong>Project Home — LVD-GS</strong></a>
+    <a href="https://zwk0901.github.io/LVD-GS2025/"><strong>Project Home — LVD-GS</strong></a>
   </p>
   <p align="center">LVD-GS — hierarchical explicit-implicit representation for robust SLAM in dynamic outdoor scenes</p>
 
