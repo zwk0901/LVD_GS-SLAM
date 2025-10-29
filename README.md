@@ -58,9 +58,6 @@ Our test setup was:
 
 ## Checkpoints
 
-You can download the *'<u>MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric</u>'* checkpoint from the [MASt3R](https://github.com/naver/mast3r) code repository, and save it to the 'checkpoints' folder.
-
-Alternatively, download it directly using the following method:
 
 ```bash
 mkdir -p checkpoints/
@@ -73,13 +70,13 @@ Please note that you must agree to the MASt3R license when using it.
 
 #### NuScenes
 
-The processed data for the NuScenes segments can be downloaded via [baidu](https://pan.baidu.com/s/1I1rnB6B8k2d4wzcRMT6gjA?pwd=omcg ) or [google](https://drive.google.com/drive/folders/1xUyNuNzUtsvZIV_q5Qz9zIXMGoMbLuCr?usp=sharing).
+The processed data for the NuScenes segments can be downloaded via [
 
 Save data under the `datasets/nuscenes` directory.
 
 #### KITTI
 
-The processed sample data for KITTI-07 can be downloaded via [baidu](https://pan.baidu.com/s/1-AmfeS-UYUJ9-sFFhO86wQ?pwd=wn4i) or [google](https://drive.google.com/drive/folders/1myR-cY3rBQBoLFZbKko36xDF2qUawJyW?usp=sharing).
+The processed sample data for KITTI-07 can be downloaded via
 
 Save data under the `datasets/KITTI` directory.
 
@@ -94,7 +91,7 @@ Save data under the `datasets/Self-collected` directory.
 
 ```bash
 ## NuScenes
-CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/waymo/405841.yaml"
+CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/NuScenes/405841.yaml"
 
 ## KITTI-01
 CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/KITTI/01.yaml"
@@ -117,7 +114,7 @@ CUDA_VISIBLE_DEVICES=0 python slam.py --config "configs/mono/Self-collected/2.ya
 
 # Acknowledgement
 
-- This work is built on [3DGS](https://github.com/graphdeco-inria/gaussian-splatting),  [MonoGS](https://github.com/muskie82/MonoGS),  and [MASt3R](https://github.com/naver/mast3r), thanks for these great works.
+- This work is built on [3DGS](https://github.com/graphdeco-inria/gaussian-splatting),  [MonoGS](https://github.com/muskie82/MonoGS), thanks for these great works.
 
 - For more details about Demo, please refer to [MonoGS](https://github.com/muskie82/MonoGS), as we are using its visualization code.
 
