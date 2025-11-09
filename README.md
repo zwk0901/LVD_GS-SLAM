@@ -13,6 +13,14 @@
   </p>
 </p>
 
+## :postbox: Updates
+<!-- - 2023.12.04: Add an option to speed up the inference process by adjusting the number of denoising steps. -->
+- 2025.11.10 In light of my upcoming CSC scholarship interview, I am open-sourcing this initial portion of my work. The rest of the codebase is under active refinement and will be released soon. Thank you for your interest and understanding.Released  initial portion of my work  https://github.com/zwk0901/LVD_GS-SLAM 📝📝📝📝📝📝📝
+- 2025.10.25: Released [LVD-GS 中文自动驾驶之心解读](https://mp.weixin.qq.com/s/X9a1fX0HMavOD0uAf732cQ) and [知乎解读：最新SOTA | 东南大学发布LVD-GS：面向智驾，推动3DGS融合动态SLAM](https://www.zhihu.com/question/8989357545/answer/1966801688200447427) introducing LVD-GS! 📝
+- 2025.10.23 This paper is released to axiv [LVD-GS (https://arxiv.org/abs/2510.22669].
+- 2025.10.22: Released [README.md](README.md)!
+- 2025.08.23: This repo is created.
+# Getting Started
 # Getting Started
 
 ## Installation
